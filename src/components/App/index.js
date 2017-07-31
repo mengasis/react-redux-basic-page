@@ -1,21 +1,28 @@
 import React, { Component } from 'react'
-import logo from './image/logo.svg'
+import PropTypes from 'prop-types'
 import './css/App.css'
+
+import Header from '../Header'
+import Body from '../Body'
+import Footer from '../Footer'
+
 
 class App extends Component {
 	render() {
+		const { children } = this.props
+
 		return (
 			<div className="App">
-				<div className="App-header">
-					<img src={logo} className="App-logo" alt="logo" />
-					<h2>Welcome to React</h2>
-				</div>
-				<p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-				</p>
+				<Header />
+				<Body content={children}/>
+				<Footer copyright="React Redux 2017"/>
 			</div>
 		)
 	}
+}
+
+App.propTypes = {
+	children: PropTypes.object.isRequired
 }
 
 export default App
