@@ -1,0 +1,37 @@
+{
+  "name": "react-redux-basic-page",
+  "version": "0.1.0",
+  "description": "Project in React Redux that consumes an API and displays its information along with images.",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-scripts": "1.0.10"
+  },
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "eslint-plugin-react": "^7.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mengasis/react-redux-basic-page.git"
+  },
+  "keywords": [
+    "React",
+    "Redux",
+    "ES6",
+    "eslint"
+  ],
+  "author": "Manuel Venegas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mengasis/react-redux-basic-page/issues"
+  },
+  "homepage": "https://github.com/mengasis/react-redux-basic-page#readme"
+}
