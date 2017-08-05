@@ -9,7 +9,7 @@ class Header extends Component {
 			<div>
 				<div className="App-header">
 					<img src={logo} className="App-logo" alt="logo" />
-					<h2>Ancient Greece</h2>
+					<h2>React</h2>
 				</div>
 			</div>
 		)

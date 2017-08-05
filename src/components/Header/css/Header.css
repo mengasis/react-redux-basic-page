@@ -1,9 +1,11 @@
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 200px;
   padding: 20px;
   color: white;
+  display: block;
 }
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
