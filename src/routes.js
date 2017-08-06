@@ -3,7 +3,8 @@ import { Route, Switch } from 'react-router-dom'
 
 // Components
 import App from './components/App'
-//import History from './components/History'
+import Home from './containers/Home'
+import Avatar from './containers/Avatar'
 //import Resumen from './components/Resumen'
 //import Mythology from './components/Mythology'
 //import Page404 from './components/Page404'
@@ -13,16 +14,17 @@ import App from './components/App'
 
 const AppRoutes = () =>
 	<App>
-		{/*
-		<Switch>
-			<Route exact path="/history" component={History} />
+		<Switch>			
+			<Route exact path="/" component={Home} />
+			<Route exact path="/avatar" component={Avatar} />
+			{/*
 			<Route exact path="/resumen" component={Resumen} />
 			<Route exact path="/mythology/gods" component={Mythology} />
 			<Route exact path="/mythology/god/:id" component={Mythology} />
-			<Route exact path="/" component={Home} />
 			<Route component={Page404} />
+			*/}
+
 		</Switch>
-		*/}
 	</App>
 
 export default AppRoutes

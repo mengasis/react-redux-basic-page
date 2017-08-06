@@ -1,7 +1,7 @@
 import isomorphicFetch from 'isomorphic-fetch'
 import promiseMiddleware from 'redux-promise-middleware'
 import reduxImmutableStateInvariant from 'redux-immutable-state-invariant'
-import { createStore, applyMiddleware } from 'redux'
+import { createStore, applyMiddleware, compose } from 'redux'
 
 const injectMiddleware = deps => ({ dispatch, getState }) => next => action =>
 	next(typeof action === 'function'
@@ -22,5 +22,7 @@ export default function configureStore(options, rootReducer) {
 		reduxImmutableStateInvariant()
 	]
 
-	return createStore(rootReducer, initialState, applyMiddleware(...middleware))
+	const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+
+	return createStore(rootReducer, initialState, composeEnhancers(applyMiddleware(...middleware)))
 }

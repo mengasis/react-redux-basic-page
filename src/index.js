@@ -11,10 +11,8 @@ import configureStore from './configureStore'
 import rootReducer from './reducers'
 
 const store = configureStore({
-	initialState: window.initialState
+	initialState: {}
 }, rootReducer)
-
-
 
 ReactDOM.render(
 	<Provider store={store}>
