@@ -2,7 +2,6 @@ const initialState = {
 	welcome: 'Hola Mundo...'
 }
 
-
 export default (state = initialState, action) => {
 	switch (action.type) {
 	case 'CHANGE_TITLE_HOME': {

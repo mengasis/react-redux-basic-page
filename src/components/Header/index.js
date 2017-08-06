@@ -12,8 +12,8 @@ const menu =
 		url: '/'
 	}, 
 	{
-		title: 'Mythology',
-		url: '/mythology'
+		title: 'Avatar',
+		url: '/avatar'
 	}
 ]
 
