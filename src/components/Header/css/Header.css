@@ -6,6 +6,28 @@
   display: block;
 }
 
+.App-menu {
+  margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.App-menu li {
+  color: white;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.App-menu li a {
+  color: lightgray;
+  text-decoration: none;
+  font-size: 130%
+}
+
+.App-menu li a:hover {
+    color: yellowgreen;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;

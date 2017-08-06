@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { Grid, Row, Col, Button } from 'react-bootstrap'
 
+
 import * as actions from '../../actions/homeAction'
 
 class Home extends Component {
