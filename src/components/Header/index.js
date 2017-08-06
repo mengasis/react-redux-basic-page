@@ -23,7 +23,7 @@ class Header extends Component {
 			<div>
 				<div className="App-header">
 					<img src={logo} className="App-logo" alt="logo" />
-					<h2>React</h2>
+					<h2>React Redux</h2>
 
 					<ul className="App-menu">
 						{ menu.map(
